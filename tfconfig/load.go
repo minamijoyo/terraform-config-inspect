@@ -130,6 +130,8 @@ func fileExt(path string) string {
 		return ".tf"
 	} else if strings.HasSuffix(path, ".tf.json") {
 		return ".tf.json"
+	} else if strings.HasSuffix(path, ".tofu") {
+		return ".tofu"
 	} else {
 		return ""
 	}
